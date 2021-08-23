@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem; margin: 3em">
+    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/70150/address-book-clipart-lg.png" class="card-img-top" alt="address book" style='height: 10em; width: 10em; margin: 3.5em'>
+    <div class="card-body">
+    <h5 class="card-title">Address Book</h5>
+      {% for person in persons %}
+        <li>{{ person.name_first }}&nbsp;{{ person.name_last }}<ul>{{ person.address.city }},{{person.address.state }}&nbsp;{{ person.address.zip}}</ul></li>            
+      {% endfor %}      
+    </div>
+  </div>
